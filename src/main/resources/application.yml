@@ -1,0 +1,16 @@
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+     serviceUrl:
+        product-zone: http://dc-hadoop156:5555/eureka/
+        develop-zone: http://dc-hadoop156:5545/eureka/
+     availabilityZones:
+        product-environment: product-zone
+        develop-environment: develop-zone
+spring:
+  application:
+    name: service-pay
+
+
+

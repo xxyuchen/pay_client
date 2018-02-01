@@ -1,0 +1,18 @@
+server:
+  port: 8091
+  context-path: /pay
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.0.154:3306/geeker?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+    username: shujuke
+    password: Shujuke!@#2017
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+eureka:
+  client:
+     region: product-environment
